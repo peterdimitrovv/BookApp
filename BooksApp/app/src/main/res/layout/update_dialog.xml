@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/imageViewUpdate"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@android:color/darker_gray"
+        android:src="@drawable/ic_add_photo" />
+
+    <EditText
+        android:id="@+id/edtNameUpdate"
+        android:hint="Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10" />
+    <EditText
+        android:id="@+id/edtGenreUpdate"
+        android:hint="Genre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10" />
+    <EditText
+        android:id="@+id/edtAuthorUpdate"
+        android:hint="Author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10" />
+    <EditText
+        android:id="@+id/edtYearUpdate"
+        android:hint="Year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10" />
+    <EditText
+        android:id="@+id/edtRatingUpdate"
+        android:hint="Rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10" />
+    <EditText
+        android:id="@+id/edtDescriptionUpdate"
+        android:hint="Description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10" />
+    <Button
+        android:id="@+id/btnUpdate"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff" />
+
+</LinearLayout>

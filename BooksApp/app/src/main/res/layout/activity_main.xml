@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+        
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:hint="Book Name"
+            android:ems="17"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_below="@+id/edtName"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@android:color/darker_gray"
+            android:src="@drawable/ic_add_photo" />
+
+        <EditText
+            android:id="@+id/edtGenre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtName"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="200dp"
+            android:ems="8"
+            android:hint="Genre" />
+
+        <EditText
+            android:id="@+id/edtAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtGenre"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="200dp"
+            android:ems="8"
+            android:hint="Author Name" />
+
+        <EditText
+            android:id="@+id/edtYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtAuthor"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="200dp"
+            android:ems="8"
+            android:hint="Year" />
+
+        <EditText
+            android:id="@+id/edtRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtYear"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="200dp"
+            android:ems="8"
+            android:hint="Rating" />
+
+        <EditText
+            android:id="@+id/edtDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:layout_below="@+id/edtRating"
+            android:layout_marginTop="15dp"
+            android:ems="17"
+            android:layout_marginLeft="15dp"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:hint="Book Description"/>
+
+        <Button
+            android:id="@+id/btnChoose"
+            android:layout_below="@+id/imageView"
+            android:background="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:layout_marginLeft="15dp"
+            android:textColor="#fff"
+            android:text="Add Image " />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_below="@+id/edtDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:ems="22"
+            android:layout_marginLeft="15dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#fff"
+            android:text="Add Book" />
+
+        <Button
+            android:id="@+id/btnList"
+            android:layout_below="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:ems="22"
+            android:layout_marginLeft="15dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#fff"
+            android:text="View Books" />
+
+    </RelativeLayout>
+
+</ScrollView>
